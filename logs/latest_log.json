@@ -1,0 +1,1533 @@
+[
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      4
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      11.45,
+      41.59
+    ],
+    "timestamp": 1745241748
+  },
+  {
+    "warning": "success",
+    "ids": [
+      5,
+      6
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      40.08,
+      8.04
+    ],
+    "timestamp": 1745241786
+  },
+  {
+    "warning": "success",
+    "ids": [
+      5,
+      6
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      10.11,
+      38.44
+    ],
+    "timestamp": 1745241789
+  },
+  {
+    "warning": "success",
+    "ids": [
+      5,
+      6
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      38.5,
+      15.46
+    ],
+    "timestamp": 1745241795
+  },
+  {
+    "warning": "success",
+    "ids": [
+      7,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      7.13,
+      41.39
+    ],
+    "timestamp": 1745241836
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      14.95,
+      40.19
+    ],
+    "timestamp": 1745242063
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242086
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      38.42,
+      13.13
+    ],
+    "timestamp": 1745242088
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      9.89,
+      40.02
+    ],
+    "timestamp": 1745242090
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242113
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      7.71,
+      40.85
+    ],
+    "timestamp": 1745242116
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      38.15,
+      7.8
+    ],
+    "timestamp": 1745242456
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      4.04,
+      41.18
+    ],
+    "timestamp": 1745242469
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      45.96,
+      2.99
+    ],
+    "timestamp": 1745242472
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242487
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      5.53,
+      40.75
+    ],
+    "timestamp": 1745242490
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 3,
+    "detected_dimensions": [],
+    "timestamp": 1745242493
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 4,
+    "detected_dimensions": [
+      41.73,
+      7.14
+    ],
+    "timestamp": 1745242495
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      41.25,
+      15.5
+    ],
+    "timestamp": 1745242536
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      41.11,
+      9.36
+    ],
+    "timestamp": 1745242577
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      31,
+      35
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242609
+  },
+  {
+    "warning": "success",
+    "ids": [
+      31,
+      35
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      14.14,
+      49.38
+    ],
+    "timestamp": 1745242612
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      36,
+      40
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242629
+  },
+  {
+    "warning": "success",
+    "ids": [
+      36,
+      40
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      2.31,
+      37.14
+    ],
+    "timestamp": 1745242630
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      36,
+      40
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242683
+  },
+  {
+    "warning": "success",
+    "ids": [
+      36,
+      40
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      7.09,
+      38.21
+    ],
+    "timestamp": 1745242685
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      46,
+      50
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242699
+  },
+  {
+    "warning": "success",
+    "ids": [
+      46,
+      50
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      41.47,
+      5.42
+    ],
+    "timestamp": 1745242701
+  },
+  {
+    "warning": "success",
+    "ids": [
+      51,
+      55
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.46,
+      15.17
+    ],
+    "timestamp": 1745242727
+  },
+  {
+    "warning": "success",
+    "ids": [
+      51,
+      55
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      11.85,
+      40.99
+    ],
+    "timestamp": 1745242734
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      56,
+      60
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242796
+  },
+  {
+    "warning": "success",
+    "ids": [
+      56,
+      60
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      38.06,
+      12.47
+    ],
+    "timestamp": 1745242798
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242935
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      4.38,
+      41.09
+    ],
+    "timestamp": 1745242937
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      0,
+      4
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745242948
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      0,
+      4
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745242950
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      4
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      40.89,
+      11.48
+    ],
+    "timestamp": 1745242956
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      6.86,
+      38.24
+    ],
+    "timestamp": 1745243553
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745243564
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745243566
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 3,
+    "detected_dimensions": [],
+    "timestamp": 1745243569
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 4,
+    "detected_dimensions": [],
+    "timestamp": 1745243573
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 5,
+    "detected_dimensions": [],
+    "timestamp": 1745243577
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 6,
+    "detected_dimensions": [],
+    "timestamp": 1745243580
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      40.35,
+      6.99
+    ],
+    "timestamp": 1745243635
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      5.25,
+      38.97
+    ],
+    "timestamp": 1745243645
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      39.56,
+      10.04
+    ],
+    "timestamp": 1745243647
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      40.5,
+      16.19
+    ],
+    "timestamp": 1745243662
+  },
+  {
+    "warning": "success",
+    "ids": [
+      31,
+      35
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.67,
+      40.61
+    ],
+    "timestamp": 1745243669
+  },
+  {
+    "warning": "success",
+    "ids": [
+      36,
+      40
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      31.83,
+      8.25
+    ],
+    "timestamp": 1745243683
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      41,
+      45
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745243714
+  },
+  {
+    "warning": "success",
+    "ids": [
+      41,
+      45
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      41.09,
+      13.15
+    ],
+    "timestamp": 1745243716
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745244362
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745244364
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      12.19,
+      32.8
+    ],
+    "timestamp": 1745244367
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745244383
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      20
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      6.0,
+      40.73
+    ],
+    "timestamp": 1745244385
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      40
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.26,
+      39.45
+    ],
+    "timestamp": 1745244390
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745244427
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      13.39,
+      39.3
+    ],
+    "timestamp": 1745244429
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      10.16,
+      38.38
+    ],
+    "timestamp": 1745244440
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      31,
+      35
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745244448
+  },
+  {
+    "warning": "success",
+    "ids": [
+      31,
+      35
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      10.14,
+      41.08
+    ],
+    "timestamp": 1745244449
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      36.28,
+      5.18
+    ],
+    "timestamp": 1745244877
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      7.11,
+      41.6
+    ],
+    "timestamp": 1745244890
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      10
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      38.66,
+      13.14
+    ],
+    "timestamp": 1745244895
+  },
+  {
+    "warning": "success",
+    "ids": [
+      11,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      7.49,
+      39.11
+    ],
+    "timestamp": 1745244906
+  },
+  {
+    "warning": "success",
+    "ids": [
+      16,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      9.82,
+      40.75
+    ],
+    "timestamp": 1745244927
+  },
+  {
+    "warning": "success",
+    "ids": [
+      16,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      6.25,
+      39.11
+    ],
+    "timestamp": 1745244993
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      9.82,
+      39.9
+    ],
+    "timestamp": 1745245335
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745245339
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      5
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      40.25,
+      4.55
+    ],
+    "timestamp": 1745245343
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      10
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      38.31,
+      9.87
+    ],
+    "timestamp": 1745245354
+  },
+  {
+    "warning": "success",
+    "ids": [
+      11,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      38.06,
+      5.11
+    ],
+    "timestamp": 1745245371
+  },
+  {
+    "warning": "success",
+    "ids": [
+      11,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.82,
+      40.42
+    ],
+    "timestamp": 1745245391
+  },
+  {
+    "warning": "success",
+    "ids": [
+      16,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      3.6,
+      38.68
+    ],
+    "timestamp": 1745245398
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.6,
+      9.13
+    ],
+    "timestamp": 1745245401
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      9.95,
+      41.01
+    ],
+    "timestamp": 1745245411
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      39.82,
+      6.94
+    ],
+    "timestamp": 1745245414
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      13.01,
+      40.13
+    ],
+    "timestamp": 1745245446
+  },
+  {
+    "warning": "success",
+    "ids": [
+      16,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.47,
+      14.37
+    ],
+    "timestamp": 1745245508
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      13.83,
+      41.99
+    ],
+    "timestamp": 1745245514
+  },
+  {
+    "warning": "success",
+    "ids": [
+      0,
+      0
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      13.04,
+      41.42
+    ],
+    "timestamp": 1745246348
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745246351
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745246353
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 3,
+    "detected_dimensions": [],
+    "timestamp": 1745246356
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 4,
+    "detected_dimensions": [],
+    "timestamp": 1745246358
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 5,
+    "detected_dimensions": [],
+    "timestamp": 1745246360
+  },
+  {
+    "warning": "success",
+    "ids": [
+      1,
+      1
+    ],
+    "attempt": 6,
+    "detected_dimensions": [
+      40.47,
+      8.97
+    ],
+    "timestamp": 1745246361
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      2,
+      2
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745246365
+  },
+  {
+    "warning": "success",
+    "ids": [
+      2,
+      2
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      16.56,
+      40.96
+    ],
+    "timestamp": 1745246367
+  },
+  {
+    "warning": "success",
+    "ids": [
+      3,
+      3
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      6.98,
+      40.1
+    ],
+    "timestamp": 1745246372
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      4,
+      4
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745246375
+  },
+  {
+    "warning": "success",
+    "ids": [
+      4,
+      4
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      39.76,
+      12.83
+    ],
+    "timestamp": 1745246380
+  },
+  {
+    "warning": "success",
+    "ids": [
+      5,
+      5
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.99,
+      41.99
+    ],
+    "timestamp": 1745246383
+  },
+  {
+    "warning": "success",
+    "ids": [
+      6,
+      10
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      41.01,
+      4.93
+    ],
+    "timestamp": 1745246393
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      11,
+      15
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745246398
+  },
+  {
+    "warning": "success",
+    "ids": [
+      11,
+      15
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      41.99,
+      13.13
+    ],
+    "timestamp": 1745246400
+  },
+  {
+    "warning": "success",
+    "ids": [
+      16,
+      20
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      16.91,
+      41.2
+    ],
+    "timestamp": 1745246404
+  },
+  {
+    "warning": "success",
+    "ids": [
+      21,
+      25
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      40.69,
+      16.54
+    ],
+    "timestamp": 1745246410
+  },
+  {
+    "warning": "success",
+    "ids": [
+      26,
+      30
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.51,
+      39.79
+    ],
+    "timestamp": 1745246416
+  },
+  {
+    "warning": "success",
+    "ids": [
+      31,
+      38
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      41.76,
+      13.19
+    ],
+    "timestamp": 1745246485
+  },
+  {
+    "warning": "success",
+    "ids": [
+      39,
+      46
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.58,
+      11.51
+    ],
+    "timestamp": 1745246525
+  },
+  {
+    "warning": "success",
+    "ids": [
+      47,
+      54
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.91,
+      4.95
+    ],
+    "timestamp": 1745246531
+  },
+  {
+    "warning": "success",
+    "ids": [
+      55,
+      64
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      39.27,
+      6.96
+    ],
+    "timestamp": 1745246549
+  },
+  {
+    "warning": "success",
+    "ids": [
+      55,
+      55
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      12.96,
+      41.8
+    ],
+    "timestamp": 1745249211
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      56,
+      60
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745249219
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      56,
+      60
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745249221
+  },
+  {
+    "warning": "success",
+    "ids": [
+      56,
+      60
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      12.55,
+      40.42
+    ],
+    "timestamp": 1745249224
+  },
+  {
+    "warning": "success",
+    "ids": [
+      61,
+      65
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      38.24,
+      5.94
+    ],
+    "timestamp": 1745249227
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      66,
+      70
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745249266
+  },
+  {
+    "warning": "success",
+    "ids": [
+      66,
+      70
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      8.91,
+      41.96
+    ],
+    "timestamp": 1745249269
+  },
+  {
+    "warning": "success",
+    "ids": [
+      71,
+      75
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      14.88,
+      40.86
+    ],
+    "timestamp": 1745249288
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      76,
+      80
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745249292
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      76,
+      80
+    ],
+    "attempt": 2,
+    "detected_dimensions": [],
+    "timestamp": 1745249294
+  },
+  {
+    "warning": "success",
+    "ids": [
+      76,
+      80
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      10.18,
+      43.91
+    ],
+    "timestamp": 1745249297
+  },
+  {
+    "warning": "No Measurements",
+    "ids": [
+      76,
+      80
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745249309
+  },
+  {
+    "warning": "success",
+    "ids": [
+      76,
+      80
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      8.31,
+      40.44
+    ],
+    "timestamp": 1745249312
+  },
+  {
+    "warning": "success",
+    "ids": [
+      76,
+      95
+    ],
+    "attempt": 3,
+    "detected_dimensions": [
+      34.36,
+      18.75
+    ],
+    "timestamp": 1745249316
+  },
+  {
+    "warning": "success",
+    "ids": [
+      76,
+      95
+    ],
+    "attempt": 4,
+    "detected_dimensions": [
+      33.49,
+      9.03
+    ],
+    "timestamp": 1745249319
+  },
+  {
+    "warning": "success",
+    "ids": [
+      76,
+      95
+    ],
+    "attempt": 5,
+    "detected_dimensions": [
+      7.07,
+      40.52
+    ],
+    "timestamp": 1745249329
+  },
+  {
+    "warning": "success",
+    "ids": [
+      96,
+      108
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      10.83,
+      38.27
+    ],
+    "timestamp": 1745249340
+  },
+  {
+    "warning": "success",
+    "ids": [
+      109,
+      121
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      9.06,
+      41.57
+    ],
+    "timestamp": 1745249372
+  },
+  {
+    "warning": "Position Unchanged",
+    "ids": [
+      122,
+      134
+    ],
+    "attempt": 1,
+    "detected_dimensions": [],
+    "timestamp": 1745249392
+  },
+  {
+    "warning": "success",
+    "ids": [
+      122,
+      134
+    ],
+    "attempt": 2,
+    "detected_dimensions": [
+      9.87,
+      40.22
+    ],
+    "timestamp": 1745249394
+  },
+  {
+    "warning": "success",
+    "ids": [
+      109,
+      121
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      9.82,
+      38.92
+    ],
+    "timestamp": 1745249411
+  },
+  {
+    "warning": "success",
+    "ids": [
+      122,
+      145
+    ],
+    "attempt": 1,
+    "detected_dimensions": [
+      13.75,
+      41.33
+    ],
+    "timestamp": 1745249429
+  }
+]

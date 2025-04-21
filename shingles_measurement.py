@@ -5,7 +5,10 @@ import pyrealsense2 as rs
 import paho.mqtt.client as mqtt
 import math
 import json
+import random
+import os
 
+DEBUG = True  # Set to False to disable DEBUG mode
 # Global variables for MQTT control
 selected_action = "idle"
 attempt = 0              # Attempt number for the current action
@@ -13,6 +16,7 @@ current_ids = []         # Current object id received
 last_measurement = None   # Stored as (mean_width, mean_height) in cm
 last_ids = []              # Object id that was last computed
 last_box_norm = None      # Normalized bounding box corners of last measurement
+sent_log = []  # Store all sent MQTT messages for logging
 
 
 # MQTT topics
@@ -36,7 +40,7 @@ def on_message(client, userdata, msg):
         print("Invalid JSON received.")
         return
 
-    cmd = data.get("command")
+    cmd = data.get("action")
     if cmd != "compute":
         print("Ignoring non-compute command.")
         return
@@ -83,6 +87,15 @@ def get_average_depth(x, y, depth_frame, kernel_size=5):
         return np.median(depth_values)
     else:
         return depth_frame.get_distance(x, y)
+    
+def save_log_immediately():
+    if sent_log:
+        log_dir = "logs"
+        os.makedirs(log_dir, exist_ok=True)
+        log_path = os.path.join(log_dir, "latest_log.json")
+        with open(log_path, "w") as f:
+            json.dump(sent_log, f, indent=2)
+
 
 # Smoothing parameters for dimensions
 alpha = 0.2  # smoothing factor (0 = very smooth, 1 = no smoothing)
@@ -93,14 +106,15 @@ smoothed_height = None
 position_change_threshold = 0.1  # 10% of the ROI size
 
 # --- Initialize RealSense ---
-pipeline = rs.pipeline()
-config = rs.config()
-config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
-config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
-profile = pipeline.start(config)
-align = rs.align(rs.stream.color)
-color_profile = profile.get_stream(rs.stream.color)
-intrinsics = color_profile.as_video_stream_profile().get_intrinsics()
+if not DEBUG:
+    pipeline = rs.pipeline()
+    config = rs.config()
+    config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
+    config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+    profile = pipeline.start(config)
+    align = rs.align(rs.stream.color)
+    color_profile = profile.get_stream(rs.stream.color)
+    intrinsics = color_profile.as_video_stream_profile().get_intrinsics()
 
 # --- Prepare ArUco Detection ---
 ARUCO_DICT = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
@@ -168,8 +182,10 @@ def process_frame():
             edge12 = np.linalg.norm(np.array(box_3d[2]) - np.array(box_3d[1]))
             edge23 = np.linalg.norm(np.array(box_3d[3]) - np.array(box_3d[2]))
             edge30 = np.linalg.norm(np.array(box_3d[0]) - np.array(box_3d[3]))
-            edge_width = (edge01 + edge23) / 2.0 * 100
-            edge_height = (edge12 + edge30) / 2.0 * 100
+            dim1 = (edge01 + edge23) / 2.0 * 100  # Convert to cm
+            dim2 = (edge12 + edge30) / 2.0 * 100  # Convert to cm
+            edge_width = min(dim1, dim2)
+            edge_height = max(dim1, dim2)
             
             # --- Temporal smoothing of dimensions ---
             if smoothed_width is None:
@@ -201,7 +217,91 @@ try:
     while True:
         # When a compute/recompute command is received:
         if selected_action == "compute":
-            print(f"Compute command received for ids {current_ids}. Measuring for 5 seconds...")
+            print(f"[{'DEBUG' if DEBUG else 'LIVE'}] Compute for ids {current_ids}, attempt {attempt}")
+
+            if DEBUG:
+                time.sleep(1)
+
+                warning_type = random.choices(
+                    ["success", "No Measurements", "Position Unchanged"],
+                    weights=[0.7, 0.2, 0.1],  # more chance for success
+                    k=1
+                )[0]
+
+                category_type = "none"
+
+                if warning_type == "success":
+                    category_type = random.choice([
+                        "XSmall", "Small", "Medium", "Large", "Rand",
+                        "Boundary_XS_S", "Boundary_S_M", "Boundary_M_L"
+                    ])
+                    expected_length = 40.0
+                    threshold_length = 2.0
+
+                    # Normal categories
+                    if category_type == "Rand":
+                        length = random.choice([
+                            random.uniform(30, 37.9),
+                            random.uniform(42.1, 50)
+                        ])
+                        width = random.uniform(2.0, 20.0)
+
+                    elif category_type == "XSmall":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(3.5, 6.9)
+
+                    elif category_type == "Small":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(7.1, 9.9)
+
+                    elif category_type == "Medium":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(10.1, 12.9)
+
+                    elif category_type == "Large":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(13.1, 17.0)
+
+                    # In-between boundary cases (trigger lower confidence in Unity)
+                    elif category_type == "Boundary_XS_S":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(6.8, 7.2)
+
+                    elif category_type == "Boundary_S_M":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(9.8, 10.2)
+
+                    elif category_type == "Boundary_M_L":
+                        length = random.uniform(38.0, 42.0)
+                        width = random.uniform(12.8, 13.2)
+
+                    # Randomize orientation
+                    if random.random() < 0.5:
+                        dims = [round(width, 2), round(length, 2)]
+                    else:
+                        dims = [round(length, 2), round(width, 2)]
+
+                    warning = "success"
+
+                else:
+                    dims = []
+                    warning = warning_type
+
+                result = {
+                    "warning": warning,
+                    "ids": current_ids,
+                    "attempt": attempt,
+                    "detected_dimensions": dims
+                }
+                
+                result["timestamp"] = int(time.time())
+                mqtt_client.publish(RESULT_TOPIC, json.dumps(result))
+                sent_log.append(result)
+                save_log_immediately()
+                print(f"→ Published DEBUG result ({category_type}):", result)
+                selected_action = "idle"
+                continue
+
             measurements = []
             boxes_norm = []  # list of normalized bounding boxes
             start_time = time.time()
@@ -233,31 +333,46 @@ try:
                     avg_diff = diff_sum / 4.0
                     print(f"Average normalized corner difference: {avg_diff:.3f}")
                     if avg_diff < position_change_threshold:
-                        result = dict( "warning": "Position Unchanged", "ids": current_ids, "attempt": attempt, "detected_dimensions": [])
+                        result = {"warning": "Position Unchanged", "ids": current_ids, "attempt": attempt, "detected_dimensions": []}
                         result_str = json.dumps(result)
                         warning_str = f"Warning: Object (id: {current_ids}) position unchanged (avg diff {avg_diff:.3f}) compared to objects (ids {last_ids}) "
                         print(warning_str)
+                        result["timestamp"] = int(time.time())
                         mqtt_client.publish(RESULT_TOPIC, result_str)
+                        sent_log.append(result)
+                        save_log_immediately()
                         selected_action = "idle"
                         continue
                 # Publish measurement if the object position is different enough.
-                result = dict( "warning": "success", "ids": current_ids, "attempt": attempt, "detected_dimensions": [mean_width, mean_height])
+                result = { "warning": "success", "ids": current_ids, "attempt": attempt, "detected_dimensions": [mean_width, mean_height]}
                 result_str = json.dumps(result)
+                result["timestamp"] = int(time.time())
                 mqtt_client.publish(RESULT_TOPIC, result_str)
+                sent_log.append(result)
+                save_log_immediately()
+
                 print("Publishing result:", result_str)
                 # Save current measurement data.
                 last_measurement = new_measurement
                 last_box_norm = new_box_norm
                 last_ids = current_ids
             else:
-                result = dict( "warning": "No Measurements", "ids": current_ids, "attempt": attempt, "detected_dimensions": [])
+                result = {"warning": "No Measurements", "ids": current_ids, "attempt": attempt, "detected_dimensions": []}
                 result_str = json.dumps(result)
+                result["timestamp"] = int(time.time())
                 mqtt_client.publish(RESULT_TOPIC, result_str)
+                sent_log.append(result)
+                save_log_immediately()
+
             # Reset command.
             selected_action = "idle"
     
         
         else:
+            if DEBUG:
+                # don’t call process_frame; just throttle the loop
+                time.sleep(0.1)
+                continue
             # Idle mode: simply display frames.
             frame_data = process_frame()
             if frame_data is None:
@@ -267,7 +382,17 @@ try:
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 finally:
-    pipeline.stop()
+    if not DEBUG:
+        pipeline.stop()
     cv2.destroyAllWindows()
     mqtt_client.loop_stop()
     mqtt_client.disconnect()
+
+    if sent_log:
+        timestamp = int(time.time())  # UNIX time in seconds
+        log_dir = "logs"
+        os.makedirs(log_dir, exist_ok=True)
+        log_path = os.path.join(log_dir, f"log_{timestamp}.json")
+        with open(log_path, "w") as f:
+            json.dump(sent_log, f, indent=2)
+        print(f"Saved MQTT log to: {os.path.abspath(log_path)}")
