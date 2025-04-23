@@ -71,7 +71,7 @@ def on_message(client, userdata, msg):
 mqtt_client = mqtt.Client()
 mqtt_client.on_connect = on_connect
 mqtt_client.on_message = on_message
-mqtt_client.connect("localhost", 1883, 60)  # Adjust as needed
+mqtt_client.connect("broker.emqx.io", 1883, 60)  # Adjust as needed
 mqtt_client.loop_start()
 
 # --- Utility: Average depth over a small window ---
